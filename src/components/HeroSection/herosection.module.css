@@ -1,0 +1,126 @@
+.parent {
+    background-image: 
+        linear-gradient(to right, 
+            rgba(253, 246, 233, 1) 1%, 
+            rgba(253, 246, 233, 1) 15%, 
+            rgba(253, 246, 233, 0.9) 50%, 
+            rgba(253, 246, 233, 0.6) 50%, 
+            rgba(253, 246, 233, 0.25) 65%, 
+            rgba(255, 248, 236, 0) 80%),
+        url("../../assets/items2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    min-height: 300px;
+    border-bottom: 1px solid #dadada;
+}
+.hero{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.newcoll{
+    color: rgb(184, 149, 84);
+    font-family: "JetBrains Mono", monospace;
+    cursor: context-menu;
+}
+.timeless{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 2rem;
+    font-style: normal;
+    margin: 0px 70px 0px 70px;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+    cursor: context-menu;
+    text-align: center;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.dividerLine {
+    width: 50px;
+    height: 1px;
+    background-color: rgb(184, 149, 84);
+}
+
+.dividerDot {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(184, 149, 84);
+    transform: rotate(45deg);
+}
+.freshdrops{
+    color: rgb(131, 111, 75);
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+   font-size: 1rem;
+   cursor: context-menu;
+   text-align: center;
+}
+.buttons{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button1{
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    background-color: rgb(255, 188, 99);
+    border: 1px solid rgb(255, 205, 113);
+    cursor: pointer;
+}
+.button2{
+    padding: 20px 40px;
+    background-color:transparent;
+    color: rgb(184, 149, 84);
+    border: 1px solid rgb(184, 149, 84);
+    cursor: pointer;
+}
+
+/* Tablets */
+@media (max-width: 600px) {
+    .parent{
+        padding: 1.5rem 1rem;
+        min-height: 250px;
+    }
+    .hero{
+        min-height: auto;
+        width: 100%;
+    }
+    .timeless{
+        font-size: 1.3rem;
+        margin: 0px 10px;
+    }
+    .freshdrops{
+        font-size: 0.8rem;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    .button1, .button2{
+        width: 100%;
+        padding: 14px 0;
+    }
+}

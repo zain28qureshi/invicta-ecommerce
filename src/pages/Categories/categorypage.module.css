@@ -1,0 +1,39 @@
+.categoryname {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #330000;
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 20px 32px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Tablet: comfortably fits 3 */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 18px;
+    padding: 16px 20px 40px;
+  }
+}
+
+/* Mobile: lock to exactly 2 per row, like the homepage */
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px 12px 30px;
+  }
+  .categoryname {
+    font-size: 1.4rem;
+    padding: 20px 12px 8px;
+  }
+}

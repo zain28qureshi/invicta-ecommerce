@@ -1,0 +1,220 @@
+.footer {
+  background: #1c1410;
+  color: #d8c8a8;
+  margin-top: 60px;
+}
+
+/* ---------- Trust strip ---------- */
+.trustStrip {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 24px 24px;
+  border-bottom: 1px solid #3a2f26;
+  background: #241a14;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #cbb98f;
+}
+
+.trustItem svg {
+  color: #d8a84e;
+}
+
+/* ---------- Main columns ---------- */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 32px 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #d8a84e;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #b8a884;
+  margin-bottom: 20px;
+  max-width: 260px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.socials a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #3a2f26;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d8c8a8;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.socials a:hover {
+  background: #d8a84e;
+  color: #1c1410;
+  border-color: #d8a84e;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.05rem;
+  color: #fdf6e9;
+  margin-bottom: 18px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkList a {
+  color: #b8a884;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
+}
+
+.linkList a:hover {
+  color: #d8a84e;
+}
+
+/* ---------- Newsletter ---------- */
+.newsletterText {
+  font-size: 0.85rem;
+  color: #b8a884;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #241a14;
+  border: 1px solid #3a2f26;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.inputIcon {
+  color: #8a7a5c;
+  flex-shrink: 0;
+}
+
+.input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fdf6e9;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #6a5c48;
+}
+
+.subscribeBtn {
+  background: #d8a84e;
+  color: #1c1410;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease;
+}
+
+.subscribeBtn:hover {
+  background: #c39640;
+}
+
+/* ---------- Bottom bar ---------- */
+.bottomBar {
+  border-top: 1px solid #3a2f26;
+  padding: 18px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: #8a7a5c;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottomLinks a {
+  color: #8a7a5c;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.bottomLinks a:hover {
+  color: #d8a84e;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 520px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 40px 24px 20px;
+  }
+  .trustStrip {
+    gap: 20px;
+  }
+  .bottomBar {
+    flex-direction: column;
+    text-align: center;
+  }
+}

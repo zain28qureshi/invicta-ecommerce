@@ -1,0 +1,373 @@
+.page {
+  min-height: 100vh;
+  background: #faf8f4;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 24px 40px;
+}
+
+.title {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.8rem;
+  color: #330000;
+  margin-bottom: 24px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  background: #fffdfa;
+  border: 1px solid #f0e6d6;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sectionHeader h3,
+.sectionHeaderPlain {
+  font-family: "Playfair Display", serif;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  margin: 0 0 10px;
+}
+
+.editLink {
+  background: none;
+  border: none;
+  color: #7a5c1e;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.shippingName {
+  font-size: 0.92rem;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.shippingAddress {
+  font-size: 0.88rem;
+  color: #6a6a6a;
+}
+
+/* ---------- Order items ---------- */
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.orderItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.orderItemImage {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #f5f2ec;
+  flex-shrink: 0;
+}
+
+.orderItemDetails {
+  flex: 1;
+  min-width: 0;
+}
+
+.orderItemName {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orderItemQty {
+  font-size: 0.8rem;
+  color: #8a8a8a;
+}
+
+.orderItemPrice {
+  font-weight: 600;
+  color: #330000;
+  font-size: 0.92rem;
+  flex-shrink: 0;
+}
+
+/* ---------- Payment method selection ---------- */
+.paymentList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fffdfa;
+  border: 1.5px solid #f0e6d6;
+  border-radius: 10px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: border 0.15s ease, background 0.15s ease;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.paymentOption input {
+  accent-color: #7a5c1e;
+  width: 16px;
+  height: 16px;
+}
+
+.paymentOption svg {
+  color: #7a5c1e;
+}
+
+.paymentOptionSelected {
+  border-color: #7a5c1e;
+  background: #fdf6e9;
+}
+
+/* ---------- Fixed bottom bar (summary + pay) ---------- */
+.bottomSpacer {
+  height: 160px;
+}
+
+.fixedBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fdf6e9;
+  border-top: 1px solid #eadcbb;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 -4px 16px rgba(51, 0, 0, 0.08);
+  z-index: 50;
+}
+
+.fixedSummary {
+  flex: 1;
+  max-width: 320px;
+}
+
+.fixedRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: #6a6a6a;
+  margin-bottom: 3px;
+}
+
+.fixedRowTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #330000;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px dashed #eadcbb;
+}
+
+.fixedLabel {
+  font-size: 0.82rem;
+  color: #6a6a6a;
+  margin: 0;
+}
+
+.fixedTotal {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7a5c1e;
+  font-family: "Playfair Display", serif;
+  margin: 2px 0 0;
+}
+
+.payBtn {
+  background: #7a5c1e;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.payBtn:hover {
+  background: #5e4716;
+}
+
+/* ---------- Processing screen with truck animation ---------- */
+.processingScreen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  gap: 20px;
+}
+
+.truckTrack {
+  position: relative;
+  width: 260px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.truckTrack::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    #d8c8a8 0px,
+    #d8c8a8 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.truckIcon {
+  position: absolute;
+  bottom: 10px;
+  color: #7a5c1e;
+  animation: driveAcross 1.8s ease-in-out infinite;
+}
+
+@keyframes driveAcross {
+  0% {
+    left: -10%;
+  }
+  50% {
+    left: 85%;
+  }
+  100% {
+    left: -10%;
+  }
+}
+
+.processingText {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: #330000;
+}
+
+.processingSubtext {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+}
+
+/* ---------- Success popup ---------- */
+.successOverlay {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(51, 0, 0, 0.15);
+  padding: 20px;
+}
+
+.successCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 40px 36px;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(51, 0, 0, 0.18);
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.successIcon {
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+.successTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.successSubtext {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+  margin-bottom: 24px;
+}
+
+.successBtn {
+  background: #7a5c1e;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.successBtn:hover {
+  background: #5e4716;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 560px) {
+  .fixedBar {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .fixedSummary {
+    max-width: none;
+  }
+  .payBtn {
+    width: 100%;
+  }
+}

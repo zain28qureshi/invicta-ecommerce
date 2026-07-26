@@ -1,0 +1,4 @@
+/* App.css or a wrapper */
+.app-content {
+  padding-top: 90px; /* match your navbar's height exactly */
+}

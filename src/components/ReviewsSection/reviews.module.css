@@ -1,0 +1,80 @@
+.section {
+  border-top: 1px solid #f0e6d6;
+  padding-top: 20px;
+  margin-top: 4px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.title span {
+  font-weight: 400;
+  color: #8a8a8a;
+  font-size: 0.9rem;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.avgNumber {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #330000;
+  font-family: "Playfair Display", serif;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review {
+  background: #fffdfa;
+  border: 1px solid #f0e6d6;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.reviewerName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.reviewDate {
+  font-size: 0.78rem;
+  color: #999;
+}
+
+.reviewStars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+.reviewComment {
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.5;
+}
