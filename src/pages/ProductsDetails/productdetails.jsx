@@ -7,7 +7,7 @@ import RatingStars from "../../components/RatingStars/ratingstars.jsx";
 import { useCart } from "../../context/cartcontext.jsx";
 import { useWishlist } from "../../context/wishlistcontext.jsx";
 import { useToast } from "../../context/toast.jsx";
-import { generateProductCopy } from "../../utils/productCopy.js";
+import { generateProductCopy } from "../../utils/productcopy.js";
 import ReviewsSection from "../../components/ReviewsSection/reviewsection.jsx";
 
 const Productdetails = () => {
