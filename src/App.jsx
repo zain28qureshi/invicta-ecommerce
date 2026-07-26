@@ -5,7 +5,7 @@ import Productdetailedpage from "./pages/ProductsDetails/productdetails.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import './App.css';
-import Cart from "./pages/Cart/Cart.jsx";
+import Cart from "./pages/Cart/cart.jsx";
 import Wishlist from "./pages/wishlist/wishlist.jsx";
 import Checkout from "./pages/checkout/checkout.jsx";
 
