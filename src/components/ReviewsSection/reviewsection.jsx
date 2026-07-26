@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import { generateReviews } from "../../utils/reviewGenereator.js";
+import { generateReviews } from "../../utils/reviewsGenereator.js";
 import styles from "./reviews.module.css";
 
 const ReviewsSection = ({ product }) => {
