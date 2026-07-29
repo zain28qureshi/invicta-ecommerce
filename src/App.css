@@ -1,4 +1,12 @@
-
+.app-content-admin {
+  padding-top: 0;
+}
 .app-content {
-  padding-top: 50px;
+  padding-top: 65px;
+}
+
+@media (max-width: 480px) {
+  .app-content {
+    padding-top: 50px; 
+  }
 }
