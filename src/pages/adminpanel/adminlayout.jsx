@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "../../components/admin/sidebar.jsx";
-import SidebarItem from "../../components/admin/sidebaritem.jsx";
+import SidebarItem from "../../components/admin/SidebarItem.jsx";
 
 import {
   BaggageClaim,
