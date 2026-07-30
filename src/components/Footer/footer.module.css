@@ -218,3 +218,13 @@
     text-align: center;
   }
 }
+.adminlink{
+  margin: 10px;
+}
+.adminlink li{
+  list-style: none;
+  
+}
+.adminlink li a{
+  color:#b8a884;
+}

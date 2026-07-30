@@ -55,6 +55,9 @@ const Footer = () => {
             <a href="#" aria-label="Facebook"><FacebookIcon /></a>
             <a href="#" aria-label="Twitter"><TwitterIcon /></a>
           </div>
+          <div className={styles.adminlink}>
+          <li><Link to="/adminpanel">Admin Panel</Link></li>
+          </div>
         </div>
 
         {/* Shop links */}
