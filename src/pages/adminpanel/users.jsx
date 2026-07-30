@@ -3,7 +3,7 @@ import { useState } from "react";
 import UserTable from "../../components/admin/usertable.jsx";
 import StatsCard from "../../components/admin/statscard.jsx";
 
-import adminUsers from "../../data/adminUsers";
+import adminUsers from "../../data/adminusers.js";
 
 export default function Users() {
   const [users, setUsers] = useState(adminUsers);
